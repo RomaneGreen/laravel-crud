@@ -11,12 +11,13 @@ Route::get('/new',[
 ]);
 
 Route::get('/todos',[
-    'uses'=> 'TodosController@index'
-
+    'uses'=> 'TodosController@index',
+    'as'=>'todos'
 ]);
 
 Route::post('/create/todos',[
-    'uses'=> 'TodosController@store'
+    'uses'=> 'TodosController@store',
+
 ]);
 
 
